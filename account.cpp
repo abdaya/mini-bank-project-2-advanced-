@@ -65,7 +65,7 @@ void Account::signUp() {
 		account_object.close();
 	}
 }
-//signIn() is a function that opens a session for the user if the account axist.
+//signIn() is a function that opens a session for the user if the account exist.
 int Account::signIn() {
 	int nb = recordNumber();
 	char lastName[NAME_SIZE];
@@ -76,7 +76,7 @@ int Account::signIn() {
 		cout << "ERROR" << endl;
 	}
 	else {
-		if (nb == 0) cout << "The Database is comletely ampty." << endl;
+		if (nb == 0) cout << "The Database is comletely empty." << endl;
 		else {
 			cout << "The number of account is : " << nb << endl;
 			cout << "last name : "; cin >> lastName;
